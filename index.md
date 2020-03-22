@@ -1,6 +1,6 @@
-< center>
+<center>
 ## Welcome~
-
+</center>
 大家好，我是李哥的小弟——焊屌
 
 ### 焊屌
@@ -25,4 +25,3 @@
 ### 以下附上陋照一波，如有富婆看上请联系我。
 
 ![Image text](http://m.qpic.cn/psc?/V10PmmE620jUeO/MoK.EY8GiNN2Kt4U8x1aWBmZyV0zjs80MB8tCLiWGVY5kIq0iDiFUPJVLqGiXrrU5pbE3XOCdF.1.GnVElOY7A!!/b&bo=wAMABcADAAURCT4!&rf=viewer_4)
-< /center>
