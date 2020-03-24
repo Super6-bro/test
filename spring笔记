@@ -1,0 +1,22 @@
+ 
+  @Autowired  自动满足Bean之间的依赖
+
+  @Autowired  
+    用在构造函数上(多个依赖情况)
+    用在成员变量
+    用在setter方法上
+    用在任意方法上
+
+  @Autowired(required = false)
+    表示注入的对象是可选的
+
+  首选Bean
+    在声明类的时候使用@Primary
+    只能定义一个@Primary
+
+  使用限定符
+    在声明和装配的时候分别使用@Qualifier
+
+  使用限定符和Bean ID
+    在声明的时候指定bean的ID(默认的ID是首写字母小写的类名)
+    在装配的时候使用@Qualifier
