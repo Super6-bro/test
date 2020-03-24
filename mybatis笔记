@@ -1,0 +1,56 @@
+ORM：
+Object Relational Mappging 对象关系映射
+简单的说：
+	就是把数据库和实体类及实体类的属性对应起来
+	让我们可以操作实体类就实现操作数据库
+	user		User
+	id			userId
+	user_name	userName
+
+把实体类的属性和数据库表的字段名保持一致.
+	user 		User
+	id 			id
+	user_name 	user_name
+
+mabatis环境搭建
+	第一步：创建Maven工程并导入坐标
+	第二步：创建实体类和dao的接口
+	第三步：创建Mybatis的主配置文件--SqlMapConfig.xml
+	第四步：创建映射配置文件--IUserDao.xml
+
+满足以下几点dao层无需写dao实现类
+	1.mabatis的映射配置文件位置必须和dao接口的包结构相同
+	2.映射配置文件的mapper标签namespace属性的取值必须是dao接口的全限定类名
+	3.映射配置文件的操作配置，ID属性的取值必须是dao接口的方法名
+
+mybatis入门案例
+	1.读取配置文件
+	2.创建SqlSessionFactory工厂
+	3.使用工厂的对象创建SqlSession
+	4.使用SqlSession创建Dao接口的代理对象
+	5.使用代理对象执行方法
+	6.释放资源
+
+	注意：
+		不要忘了在映射配置中告知mybatis要封装到哪个实体类中
+		配置方式：指定实体类的全限定类名
+
+基于注解的入门案例
+	把IUserDao.xml移除，在dao接口的方法上使用@Select注解，并且指定SQL语句
+	同时需要在SqlMapConfig.xml中的mapper配置时，使用class属性指定dao接口的全限定类名
+
+自定义Mybatis的分析：
+	mabatis在使用代理dao的方式是向增删改查时做什么呢？
+		1.创建代理对象
+		2.在代理对象中调用selectList
+
+	自定义mybatis能通过入门案例看到类
+		class Resources
+		class SqlSessionFactoryBuilder
+		interface SqlSessionFactory
+		interface SqlSession
+		
+mybatis主配置文件中的常用配置
+	properties标签
+	typeAliases标签				  ------解释Integer的写法
+	mappers标签的子标签：package
