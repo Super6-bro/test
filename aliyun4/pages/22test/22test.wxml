@@ -1,0 +1,98 @@
+<!--pages/22test/22test.wxml-->
+<view class="body">
+
+  <!--头  S-->
+  <view class="bar">
+    <view class="title">单选题 {{index+1}}/{{count}} | 计时中：{{hours}}:{{minute}}:{{second}}</view>
+    <view>当前:{{h}}:{{m}}:{{s}}</view>
+    <view class="jump">
+      <input class="inp" type="number" maxlength="3" bindinput="to" value="{{to}}"></input>
+      <view class="jumpbtn" bindtap="jump">GO</view>
+    </view>
+  </view>
+  <!--头  E-->
+
+  <!--主体  S-->
+  <view class="itemank">
+    <!-- 题目内容  S -->
+    <view class="subject">
+      {{itembank[index].subject}}
+      <image src="{{itembank[index].quote}}" wx:if="{{itemType == 0}}"></image>
+      <audio src="{{itembank[index].quote}}" wx:if="{{itemType == 1}}"></audio>
+      <video src="{{itembank[index].quote}}" wx:if="{{itemType == 2}}"></video>
+    </view>
+    <!-- 题目内容  E -->
+
+    <!-- 选项  S -->
+    <radio-group class="options" bindchange="radioValue" wx:if="{{optionsType == 0}}">
+      <label wx:for="{{itembank[index].options}}" wx:for-item="options" wx:key="unique">
+        <view class="subject_o {{subChecked==options.option_value?(judge=='正确'?'checked_right':'checked_false') : ''}}">
+          <radio class="options_value" value="{{options.option_value}}" checked="{{checked}}" disabled="{{disabled}}"></radio>
+          {{options.option_value}}、{{options.option_name}}
+        </view>
+      </label>
+    </radio-group>
+    <checkbox-group class="options" bindchange="checkValue" wx:if="{{optionsType == 1}}">
+      <view wx:for="{{itembank[index].options}}" wx:for-item="options" wx:key="unique">
+        <checkbox class="options_value" value="{{options.option_value}}" checked="{{checked}}" disabled="{{disabled}}">
+          {{options.option_value}}.{{options.option_name}}
+        </checkbox>
+      </view>
+    </checkbox-group>
+    <!-- 选项  E -->
+  </view>
+  <!--主体  E-->
+
+  <!-- 纠错组  S -->
+  <view class="pop" hidden="{{feed_hidden}}" wx:if="{{bottom_show == 0}}">
+    <view class="popError">
+      <view class="theme" style="color:#dd0000">试题纠错</view>
+      <view>
+        <input class="fbinp" type="number" maxlength="512" bindinput="getfeed"></input>
+      </view>
+      <view class="fbbtn" bindtap="subfeed">提交</view>
+    </view>
+    <view class="close">
+      <image class="closeImg" src="../../images/close.png"></image>
+    </view>
+  </view>
+  <!-- 纠错组  E -->
+
+  <!-- 正确答案  S -->
+  <view class="rightKey, pop" hidden="{{answer_hidden}}" wx:if="{{bottom_show == 1}}">
+    <view class="popResolve">
+      <view class="theme" style="color:#009900">正确答案：{{itembank[index].answer}}</view>
+      <view>题目解析：{{itembank[index].analysis}}</view>
+    </view>
+  </view>
+  <!-- 正确答案  E -->
+
+  <!-- 重复组  S -->
+  <view class="pop" hidden="{{again_hidden}}" wx:if="{{bottom_show == 2}}">
+    <view class="popAgain">
+      <view class="theme" style="color:#ffcc00">强化练习</view>
+      <view>如下题目已加入重复练习</view>
+      <view>单选题5、当某个IP尝试多次登录云服务器ECS的时候</view>
+      <view>提交</view>
+    </view>
+  </view>
+  <!-- 重复组  E -->
+
+  <!-- 按钮组  S -->
+  <view>
+    <view>
+      <button class="botton error {{feed_class}}" bindtap="feed" style="width:20%;">
+        <image class="botImg" src="../../images/error.png"></image>
+      </button>
+      <button class="botton resolve {{answer_class}}" bindtap="answer" style="width:20%;">
+        <image class="botImg" src="../../images/resolve.png"></image>
+      </button>
+      <button class="botton again {{again_class}}" bindtap="again" style="width:20%;">
+        <image class="botImg" src="../../images/again.png"></image>
+      </button>
+      <button class="botton next" bindtap="next" hidden="{{next_hidden}}" style="width:40%;">下一题</button>
+      <button class="botton sub" hidden="{{sub_hidden}}" bindtap="toAch">交卷</button>
+    </view>
+  </view>
+  <!-- 按钮组  E -->
+</view>

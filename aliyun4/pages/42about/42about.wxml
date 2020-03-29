@@ -1,0 +1,13 @@
+<!--pages/42about/42about.wxml-->
+<view class="body">
+  <view class="productInfo">
+    <image class="head_img" src="../../images/logo.jpg"></image>
+    <view>海塘云题库</view>
+    <view class="version">Version Beta 1.3</view>
+  </view>
+  <view class="footer">
+    <view>大鱼海塘公司 版权所有</view>
+    <view>Copyright 2020 BigfishSeapond.</view>
+    <view>All Rights Reserved.</view>
+  </view>
+</view>

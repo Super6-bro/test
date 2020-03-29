@@ -1,0 +1,28 @@
+/* pages/1discover.wxss */
+.body{
+  margin:0;
+  padding: 1rem;
+  height: 100%;
+  background-color: #fafafa;
+}
+.certificate{
+  margin-bottom:0.5rem;
+  padding:1rem;
+  border: solid 2rpx #f1f1f1;
+  border-radius: 0.5rem;
+  background-color:  #ffffff;
+}
+.certificate_name{
+  font-size: 1rem;
+  font-weight:  bold;
+  color: #555555;
+  vertical-align: middle;
+}
+.testpaper_name{
+  vertical-align: middle;
+  font-size: 1rem;
+  color: #999999;
+}
+.testpaper_name view{
+  margin: 10rpx 0rpx;
+}

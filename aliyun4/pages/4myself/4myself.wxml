@@ -1,0 +1,38 @@
+<!--pages/4myself/4myself.wxml-->
+<view class="body">
+  <view class="userInfo">
+    <view class="leftIcon">
+      <image class="profileIcon" src="{{avatarUrl}}"></image>
+    </view>
+    <view class="rigntInfo">
+      <view class="wechatname, petName">{{wechatname}}</view>
+      <view class="other">微信号：</view>
+    </view>
+  </view>
+  <view class="list_box">
+    <view class="list">
+      <view class="l_left">历史成绩</view>
+      <view class="l_right">
+        <navigator url="../42about/42about" open-type="navigate">
+          <image class="nextImg" src="../../images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="list">
+      <view class="l_left">帮助与反馈</view>
+      <view class="l_right">
+        <navigator url="../42about/42about" open-type="navigate">
+          <image class="nextImg" src="../../images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+    <view class="list">
+      <view class="l_left">关于</view>
+      <view class="l_right">
+        <navigator url="../42about/42about" open-type="navigate">
+          <image class="nextImg" src="../../images/next.png"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

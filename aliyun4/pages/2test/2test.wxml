@@ -1,0 +1,15 @@
+<!--pages/2test/2test.wxml-->
+<view class="body">
+  <navigator url="../choice/choice" class="textBook" wx:for="{{testpaper}}" wx:for-item="testpaper" wx:key="unique">
+  <view class="list">
+    <view class="l_left">
+      <image class="textImg" src="{{testpaper.img_src}}"></image>
+    </view>
+    <view class="l_right">
+      <view class="textName">{{testpaper.testpaper_name}}</view>
+      <view class="textSchedule">{{testpaper.schedule}}</view>
+      <view class="textTime">{{testpaper.time}}</view>
+    </view>
+  </view>
+  </navigator>
+</view>

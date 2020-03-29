@@ -1,0 +1,16 @@
+/* pages/43Agreement.wxss */
+.body{
+  margin:1rem 2rem;
+  padding:0;
+  line-height: 1.8rem;
+  text-align: justify;
+  text-justify: inter-cluster; 
+  text-indent: 2rem;
+  background-color: #ffffff;
+}
+.date{
+  text-indent:0;
+}
+.company{
+  text-align: right;
+}

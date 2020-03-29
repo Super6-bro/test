@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/2test/2test",
+    "pages/choice/choice",
+    "pages/22test/22test",
+    "pages/1discover/1discover",
+    "pages/3forum/3forum",
+    "pages/4myself/4myself",
+    
+    "pages/43achievement/43achievement",
+    "pages/42history/42history",
+    "pages/42about/42about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationBarTitleText": "海塘云题库",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333333",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#1c449b",
+    "list": [
+      {
+        "pagePath": "pages/2test/2test",
+        "text": "刻意练习",
+        "iconPath": "images/test.png",
+        "selectedIconPath": "images/select_test.png"
+      },
+      {
+        "pagePath": "pages/4myself/4myself",
+        "text": "我",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/select_user.png"
+      }
+    ]
+  }
+}

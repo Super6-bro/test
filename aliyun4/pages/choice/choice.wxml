@@ -1,0 +1,8 @@
+<!--pages/choice/choice.wxml-->
+<view class="box">
+  <view class="title">阿里云计算</view>
+    <navigator url="../22test/22test?testpaper_id={{testpaper.testpaper_id}}"
+     class="checkbox" wx:for="{{testpaper}}" wx:for-item="testpaper" wx:key="unique">
+      {{testpaper.testpaper_name}}
+    </navigator>
+</view>

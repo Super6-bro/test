@@ -1,0 +1,18 @@
+/* pages/conclude/conclude.wxss */
+.box{
+  margin: 40% auto;
+  font-size: 1.5rem;
+  text-align: center;
+  background: linear-gradient(to right, #f00, #ff0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.index{
+  background-color: transparent;
+  color: lightcoral;
+}
+.myInfo{
+  background-color: transparent;
+  color: lightcoral;
+}

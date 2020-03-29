@@ -1,0 +1,46 @@
+/* pages/login/login.wxss *//* pages/42about.wxss */
+.body{
+  margin:0;
+  padding:0;
+  background-color: #ffffff;
+}
+.productInfo{
+  margin: 7rem 0;
+  padding:0;
+  text-align:center;
+  clear: both;
+  color: #aaaaaa;
+}
+.head_img{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius:10%;
+}
+.empower{
+  margin: 2rem 3rem;
+  padding: 1rem 0;
+  background-color: #ffffff;
+  clear: both;
+  position: relative;
+}
+.button{
+  margin: 0;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #1c449b;
+}
+.text_color{
+  color: black;
+  line-height: 3.5rem
+}
+.footer{
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #cccccc;
+  position:absolute;
+  bottom: 0;
+}

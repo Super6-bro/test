@@ -1,0 +1,9 @@
+<!--pages/conclude/conclude.wxml-->
+<view class="box">
+  <icon type="success" size="80"></icon>
+  <view class="tips">恭喜你完成考试！！</view>
+  <view class="achievement">您的成绩为：{{achievement}}</view>
+</view>
+
+  <button class="index" bindtap="toIndex">主页面</button>
+  <button class="myInfo" bindtap="toMyInfo">查看历史成绩</button>

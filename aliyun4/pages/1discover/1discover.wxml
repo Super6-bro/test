@@ -1,0 +1,16 @@
+<!--pages/1discover.wxml-->
+
+<!-- 主体 S -->
+<view class="body">
+<view class="content">
+  <!-- 证书 S -->
+  <navigator class="certificate" wx:for="{{certificate}}" wx:for-item="certificate_item" wx:key="unique" url="../choice/choice?certificate_id={{certificate_item.certificate_id}}">
+    <view class="certificate_name">{{certificate_item.certificate_name}}</view>
+    <view class="testpaper_name">
+      <view wx:for="{{certificate_item.testpaper}}"  wx:for-item="testpaper_item" wx:key="unique">{{testpaper_item.testpaper_name}}</view>
+    </view>
+  </navigator>
+   <!-- 证书 E -->
+</view>
+</view>
+<!-- 主体 E -->

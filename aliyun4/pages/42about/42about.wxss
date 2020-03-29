@@ -1,0 +1,55 @@
+/* pages/42about.wxss */
+.body{
+  margin:4rem 0;
+  padding:0;
+  background-color: #ffffff;
+}
+.productInfo{
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align:center;
+  clear: both;
+}
+.version{
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+.head_img{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius:10%;
+}
+.list{
+  margin: 0 3rem;
+  padding: 1rem 0;
+  border-bottom: 2rpx solid #f0f0f0;
+  background-color: #ffffff;
+  clear: both;
+  overflow: hidden;
+}
+.l_left{
+  float: left;
+  clear: left;
+  display: inline-block
+}
+.l_right{
+  float: right;
+  clear: right;
+  display: inline-block;
+}
+.nextImg{
+  margin-top: 8rpx; 
+  padding: 0;
+  width: 1rem;
+  height: 1rem;
+}
+.footer{
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: #cccccc;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,60 @@
+/* pages/2test/2test.wxss */
+.body{
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.selfdata{
+  margin:0;
+  padding: 1rem;
+  font-size: 0.6rem;
+  background-color: #f0f0f0;
+}
+.title{
+  padding: 0.5rem 1rem;
+  font-size: 1rem;  
+  color:  #555555;
+  background-color:  #f7f7f7;  
+}
+.list{
+  margin:0;
+  padding: 1rem; 
+  border-bottom: 2rpx solid #f0f0f0;
+  color: #555555;
+  clear: both;
+  overflow: hidden;
+}
+.l_left{
+  margin-right: 0.5rem;
+  float: left;
+  clear: left;
+}
+.textImg{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+.l_right{
+  position: relative;
+  overflow: hidden;
+}
+.textName{
+  padding-bottom: 0.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.textSchedule{
+  margin: 0.35rem;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+.textTime{
+  padding: 0.2rem;
+  font-size: 0.6rem;
+  color: #cccccc;
+  background-color: #ffffff;
+  position: absolute;
+  top:0;
+  right:0;
+}

@@ -1,0 +1,47 @@
+/* pages/42history.wxss */
+.body{
+  margin:0;
+  padding:0;
+  background-color: #ffffff;
+}
+.productInfo{
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align:center;
+  clear: both;
+}
+.version{
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+.head_img{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius:10%;
+}
+.list{
+  margin: 1rem 3rem;
+  padding: 1rem 0;
+  border-top: 2rpx solid #fafafa;
+  background-color: #ffffff;
+  clear: both;
+  position: relative;
+}
+.l_left{
+  float: left;
+  clear: left;
+  display: inline-block
+}
+.l_right{
+  float: right;
+  clear: right;
+  display: inline-block;
+}
+.footer{
+  margin-top: 4rem;
+  width: 100%;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #cccccc;
+  position: relative;
+}

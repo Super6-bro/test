@@ -1,0 +1,32 @@
+<!--pages/42history/42history.wxml-->
+<view class="body">
+  <view class="productInfo">
+    <image class="head_img" src="../../images/logo.jpg"></image>
+    <view>海塘云题库</view>
+    <view class="version">Version Beta 1.3</view>
+  </view>
+  <view class="list">
+    <view class="l_left">功能介绍</view>
+    <view class="l_right">></view>
+  </view>
+  <view class="list">
+    <view class="l_left">投诉</view>
+    <view class="l_right">></view>
+  </view>
+  <view class="list">
+    <view class="l_left">检查新版本</view>
+    <view class="l_right">></view>
+  </view>
+  <view class="list">
+    <view class="l_left">营业执照</view>
+    <view class="l_right">></view>
+  </view>
+  <view class="footer">
+    <view>《软件许可及服务协议》</view>
+    <view>《隐私保护指引》</view>
+    <view>大鱼海塘公司 版权所有</view>
+    <view>Copyright 2020 BigfishSeapond.</view>
+    <view>All Rights Reserved.</view>
+    <view>湘ICP备20002858号</view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="body">
+  <view class="productInfo">
+    <image class="head_img" src="../../images/logo.jpg"></image>
+    <view>海塘云题库</view>
+  </view>
+
+  <view class="empower">
+    <button class="button" wx:if="{{canIUse}}" bindtap="showtrue" disabled="{{disabled}}">授权登录</button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+
+  <mp-dialog title="验证" show="{{show}}" bindbuttontap="show_state" buttons="{{btn}}">
+    <view class="text_color">请输入你的手机号</view>
+    <input type="input" placeholder="Phonenumber" maxlength="11" bindinput="phonenumber" value="{{phone}}"></input>
+  </mp-dialog>
+
+  <view class="footer">
+    <view>大鱼海塘公司 版权所有</view>
+    <view>Copyright 2020 BigfishSeapond.</view>
+    <view>All Rights Reserved.</view>
+    <view>湘ICP备20002858号</view>
+  </view>
+</view>

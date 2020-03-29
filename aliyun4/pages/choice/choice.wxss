@@ -1,0 +1,15 @@
+/* pages/choice/choice.wxss */
+.title{
+  margin: 1rem;
+  font-weight: bold;
+}
+.checkbox{
+  margin: 1rem;
+  border: solid 2rpx #cccccc;
+  border-radius: 0.5rem;
+  padding: 1.4rem; 
+  font-size: 1rem;
+  text-align: center;
+  color:  #555555;
+  background-color: #f9f9f9;
+}

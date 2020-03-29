@@ -1,0 +1,8 @@
+<!--pages/1forum/1forum.wxml-->
+<view class="body">
+  <view class="title">阿里云计算</view>
+    <navigator url="../test/test?certificate_id={{certificate_id}}&testpaper_id={{testpaper.testpaper_id}}"
+     class="checkbox" wx:for="{{testpaper}}" wx:for-item="testpaper" wx:key="unique">
+      {{testpaper.testpaper_name}}
+    </navigator>
+</view>
